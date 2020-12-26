@@ -1,4 +1,4 @@
-package com.meazza.meraki
+package com.meazza.meraki.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -6,8 +6,11 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.meazza.meraki.R
 import com.meazza.meraki.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private val navController by lazy { findNavController(R.id.nav_host_fragment) }
